@@ -10,7 +10,12 @@
       <a class="main-header-logo">
         <img src="img/logo-main.png" width="164" height="36" alt="Логотип «Девайс»">
       </a>
-      <!-- Здесь будет форма поиска -->
+
+      <form action="http://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" for="search">Поиск по сайту</label> 
+        <input type="search" id="search" name="search" placeholder="Поиск по сайту">
+      </form> 
+
       <ul class="site-navigation">
         <li class="site-navigation-item">
           <a class="site-navigation-link" href="catalog.html">Каталог товаров</a>
@@ -71,19 +76,72 @@
     </ul>
 
     <aside class="filter">
-      <!-- Здесь будет форма фильтра-->
+      <p class="selection-heading">Фильтр</p> 
+      
+      <form action="http://echo.htmlacademy.ru" method="post">
+        <label for="filter-price">Стоимость</label> 
+        <input type="range" id="filter-price">
+        
+        <fieldset>
+          <legend>Цвет</legend>
+           <label><input type="checkbox" value="Черный" checked>Черный</label>
+           <label><input type="checkbox" value="Белый">Белый</label>
+           <label><input type="checkbox" value="Синий" checked>Синий</label>
+           <label><input type="checkbox" value="Красный" checked>Красный</label>
+           <label><input type="checkbox" value="Розовый">Розовый</label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Bluetooth</legend>
+            <label><input type="radio" name="bluetooth" value="Есть" checked>Есть</label>
+            <label><input type="radio" name="bluetooth" value="Нет">Нет</label>
+        </fieldset>
+
+        <button class="button" type="submit">Показать</button>
+       </form> 
+
     </aside>
 
     <div class="sort-by">
-      <p>Сортировка</p>
+      <p class="selection-heading">Сортировка</p>
       <ul class="sort-by-type">
-        <li><a href="#">По цене</a></li>
-        <li><a href="#">По типу</a></li>
-        <li><a href="#">По популярности</a></li>
+        <li>
+          <a href="#">
+            <label>
+              <input type="radio" name="sort" value="По цене" checked>По цене
+            </label>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <label>
+              <input type="radio" name="sort" value="По типу">По типу
+            </label>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <label>
+              <input type="radio" name="sort" value="По популярности">По популярности
+            </label>
+          </a>
+        </li>
       </ul>
       <ul class="sort-by-arrows">
-        <li><a href="#"><span class="up-arrow">↑</span></a></li>
-        <li><a href="#"><span class="down-arrow">↓</span></a></li>
+        <li>
+          <a href="#">
+            <label>
+              <input type="radio" name="arrows" value="up">↑
+            </label>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <label>
+              <input type="radio" name="arrows" value="down" checked>↓
+            </label>
+          </a>
+        </li>
       </ul>
     </div>
 

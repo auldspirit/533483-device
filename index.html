@@ -68,11 +68,11 @@
     <section class="slider">
       <h2 class="visually-hidden">Промо-слайдер</h2>
 
-      <div class="slider-radiobuttons">
+      <div class="slider-buttons">
         <ul>
-          <li><a href="#"><span class="radiobutton-current">o</span></a></li>
-          <li><a href="#"><span class="radiobutton">o</span></a></li>
-          <li><a href="#"><span class="radiobutton">o</span></a></li>
+          <li><button type="button" class="slider-button" aria-label="Первый слайд"></button></li>
+          <li><button type="button" class="slider-button" aria-label="Второй слайд"></button></li>
+          <li><button type="button" class="slider-button" aria-label="Третий слайд"></button></li>
         </ul>
       </div>
 
@@ -159,21 +159,13 @@
     <section class="services">
       <h2 class="visually-hidden">Услуги магазина «Девайс»</h2>
 
-      <ul class="services-tabs">
-        <li class="services-tabs-item">
-          <a href="#"><label class="services-tabs-current">
-            <input type="radio" name="services" value="Доставка" checked>Доставка</label>
-          </a>
-        </li>
-        <li class="services-tabs-item">
-          <a href="#"><label class="services-tabs">
-          <input type="radio" name="services" value="Гарантия">Гарантия</label></a>
-        </li>        
-        <li class="services-tabs-item">
-          <a href="#"><label class="services-tabs">
-          <input type="radio" name="services" value="Кредит">Кредит</label></a>
-        </li>
-      </ul>
+      <div class="services-buttons">
+        <ul>
+          <li><button type="button" class="services-button">Доставка</button></li>
+          <li><button type="button" class="services-button">Оплата</button></li>
+          <li><button type="button" class="services-button">Гарантия</button></li>
+        </ul>
+      </div>
 
       <ul class="services-content">
         <li class="services-item-current">
@@ -192,9 +184,9 @@
 
     </section>
 
-    <section class="partners">
-      <h2 class="visually-hidden">Наши партнеры</h2>
-      <ul class="partners-list">
+    <section class="brands">
+      <h2 class="visually-hidden">Наши бренды</h2>
+      <ul class="brands-list">
         <li><a href="#"><img src="img/logo-1.jpg" width="260" height="100" alt="DJI"></a></li>
         <li><a href="#"><img src="img/logo-2.jpg" width="260" height="100" alt="SP Gadgets"></a></li>
         <li><a href="#"><img src="img/logo-3.jpg" width="260" height="100" alt="GoPro"></a></li>
@@ -294,7 +286,7 @@
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
-      <button type="button" class="modal-close" aria-label="Закрыть">x</button>
+      <button type="button" class="modal-close" aria-label="Закрыть"></button>
     </section>
 
   </body>

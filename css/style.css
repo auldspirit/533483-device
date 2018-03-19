@@ -1,0 +1,373 @@
+
+@font-face {
+    font-family: 'Gilroy ExtraBold';
+    src: url('../fonts/gilroyextrabold.woff2') format('woff2'),
+         url('../fonts/gilroyextrabold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy Light';
+    src: url('../fonts/gilroylight.woff2') format('woff2'),
+         url('../fonts/gilroylight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/opensans.woff2') format('woff2'),
+         url('../fonts/opensans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/opensanslight.woff2') format('woff2'),
+         url('../fonts/opensanslight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Gilroy ExtraBold", "Arial Black", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  letter-spacing: .01em;
+}
+
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: .2em;
+  color: #000000;
+}
+
+a:hover {
+  opacity: .6;
+}
+
+a:active {
+  opacity: .3;
+}
+
+.dropdown-menu-item a {
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  text-transform: none;
+  letter-spacing: .01em;
+}
+
+.main-nav {
+background-color: #f7e296;
+}
+
+.main-nav input[type="search"] {
+  border: none;
+  background-color: #f7e296;
+}
+
+.basic-text {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  text-transform: none;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: .01em;
+}
+
+.breadcrumbs li,
+.breadcrumbs a {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  text-transform: none;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: .01em;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.filter {
+  background-color: #efefef;
+}
+
+.sort-by {
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.catalog-item-price {
+  font-family: "Gilroy Light", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  letter-spacing: .01em;
+}
+
+.main-nav input[placeholder] {
+  font-family: "Open Sans Light", "Arial", sans-serif;
+  text-transform: none;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: .01em;
+}
+
+.modal.contact-us input[placeholder],
+.modal.contact-us textarea,
+.sort-by a {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.selection-heading,
+.pagination-list {
+  font-size: 16px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+.filter-item label {
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 40px;
+  letter-spacing: .01em;
+}
+
+.button-compare {
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 36px;
+  letter-spacing: .01em;
+}
+
+
+.site-nav,
+.dropdown-menu,
+.user-nav,
+.shopping,
+.slider-buttons,
+.slider-list, 
+.catalog-list,
+.services-list,
+.services-content,
+.brands-list,
+.about-us-list,
+.footer-site-nav,
+.footer-user-nav,
+.footer-social,
+.footer-shopping,
+.breadcrumbs {
+  list-style: none;
+}
+
+.slider-heading {
+  font-size: 47px;
+  line-height: 56px;
+}
+
+.slider-table th {
+  font-family: "Gilroy Light", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: normal;
+}
+
+.slider-table td {
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+.slider-table th {
+  padding-right: 80px;
+}
+
+.catalog-list a { 
+  text-transform: none;
+  letter-spacing: .01em;
+ }
+
+.services {
+  background-color: #e5e5e5;
+}
+
+.services h3,
+.catalog-heading h1 {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+.brands-list li {
+  opacity: .2;
+  display: inline-block;
+  width: 260px;
+  height: 100px;
+}
+
+.brands-list li:hover img {
+  opacity: 0;
+  position: relative;
+  left: 10px;
+}
+
+.brands-list li:first-child:hover {
+  background-image: url("../img/logo-1-hover.jpg");
+  opacity: 1; 
+}
+
+.brands-list li:nth-child(2):hover {
+  background-image: url("../img/logo-2-hover.jpg");
+  opacity: 1; 
+}
+
+.brands-list li:nth-child(3):hover {
+  background-image: url("../img/logo-3-hover.jpg");
+  opacity: 1; 
+}  
+
+.brands-list li:last-child:hover {
+  background-image: url("../img/logo-4-hover.jpg");
+  opacity: 1; 
+}  
+
+}
+.about-us-list {
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0;
+}
+
+.button {
+  position: relative;
+  width: 260px;
+  height: 40px;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  margin: auto;
+  text-align: center;
+  color: #000000;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.button:hover {
+  color: #000000;
+}
+
+.button::before {
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background: #f0c52e;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: -1;
+  transition: .2s ease;
+}
+
+.button:hover::before {
+  height: 100%;
+  padding: 5px 0;
+} 
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.services-button {
+  width: 160px;
+  height: 8px;
+  line-height: 8px;
+  display: block;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #f0c52e;
+  background-position: center;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  margin-bottom: 57px;
+  border: 0;
+}
+
+.services-button:hover {
+  height: 40px;
+  line-height: 40px;
+  color: #000000;
+  transition: .2s ease;
+  border: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.services-button:active {
+  display: block;
+  position: relative;
+  color: #f7e184;
+  width: 278px;
+  height: 40px;
+  background: #000000;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 0;
+}
+
+.services-button:focus {
+  display: block;
+  position: relative;
+  color: #f7e184;
+  width: 278px;
+  height: 40px;
+  background: #000000;
+  text-align: left;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border: 0;
+}
+
+.footer-main,
+.footer-main a {
+  background-color: #464646;
+  color: #ffffff;
+}
+
+.modal {
+  background-color: #ffffff;
+  box-shadow: 0px 10px 20px 0px rgba(4, 6, 6, 0.2);
+  z-index: 1;
+}
+
+.modal.contact-us {
+  width: 960px;
+  height: 553px;
+}
+
+.modal.modal-map {
+  background-image: url("../img/map-big.jpg");
+  width: 960px;
+  height: 559px;
+}
+
+
+/*.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}*/

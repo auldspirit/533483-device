@@ -15,30 +15,43 @@
 
       <form action="http://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden" for="search">Поиск по сайту</label> 
-        <input type="search" id="search" name="search" placeholder="Поиск по сайту">
+        <input class="search-input" type="search" id="search" name="search" placeholder="Поиск по сайту">
+        <button class="search-button basic-text" type="submit">Найти</button>
       </form> 
 
-      <ul class="site-nav">
+<ul class="site-nav">
         <li class="site-nav-item">
           <a class="site-nav-link" href="catalog.html">Каталог товаров</a>
           <ul class="dropdown-menu">
-            <li class="dropdown-menu-item">
-              <a href="#">Виртуальная реальность</a>
+            <li>
+              <ul class="dropdown-menu-1">
+                <li class="dropdown-menu-item">
+                  <a class="dropdown-menu-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a class="dropdown-menu-link" href="#">Моноподы для селфи</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a class="dropdown-menu-link" href="#">Экшн-камеры</a>
+                </li>
+              </ul>
             </li>
-            <li class="dropdown-menu-item">
-              <a class="dropdown-menu-link">Моноподы для селфи</a>
+            <li>
+              <ul class="dropdown-menu-2">
+                <li class="dropdown-menu-item">
+                  <a class="dropdown-menu-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="dropdown-menu-item">
+                  <a class="dropdown-menu-link" href="#">Умные часы</a>
+                </li>
+              </ul>
             </li>
-            <li class="dropdown-menu-item">
-              <a class="dropdown-menu-link" href="#">Экшн-камеры</a>
-            </li>
-            <li class="dropdown-menu-item">
-              <a class="dropdown-menu-link" href="#">Умные часы</a>
-            </li>
-            <li class="dropdown-menu-item">
-              <a class="dropdown-menu-link" href="#">Квадрокоптеры</a>
-            </li>
-            <li class="dropdown-menu-item">
-              <a class="dropdown-menu-link" href="#">Фитнес-браслеты</a>
+            <li>
+              <ul class="dropdown-menu-3">
+                <li class="dropdown-menu-item">
+                  <a class="dropdown-menu-link" href="#">Квадрокоптеры</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </li>
@@ -199,10 +212,13 @@
       </ul>
 
       <ul class="pagination-list">
-        <li class="prev"><a href="#prev">Назад</a></li>
-        <li class="pagination-item pagination-item-current"><a>1</a></li>
-        <li class="pagination-item"><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="prev"><a>Назад</a></li>
+        <li>
+          <ul class="pagination-numbers">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          </ul>
         <li class="next"><a href="#next">Вперед</a></li>
       </ul>
 

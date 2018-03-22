@@ -13,11 +13,24 @@
         <img src="img/logo-main.png" width="164" height="36" alt="Логотип «Девайс»">
       </a>
 
-      <form action="http://echo.htmlacademy.ru" method="post">
-        <label class="visually-hidden" for="search">Поиск по сайту</label> 
-        <input class="search-input" type="search" id="search" name="search" placeholder="Поиск по сайту">
-        <button class="search-button basic-text" type="submit">Найти</button>
-      </form> 
+      <div class="top-nav">
+        <form action="http://echo.htmlacademy.ru" method="post">
+          <label class="visually-hidden" for="search">Поиск по сайту</label> 
+          <input class="search-input" type="search" id="search" name="search" placeholder="Поиск по сайту">
+          <button class="search-button basic-text" type="submit">Найти</button>
+        </form> 
+
+        <ul class="user-nav">
+          <li class="login-item">
+            <a class="login-link basic-text" href="#">Войти</a>
+          </li>
+        </ul>
+
+        <ul class="shopping basic-text">
+          <li class="shopping-item"><a class="shopping-link basic-text" href="#">Сравнить</a></li>
+          <li class="shopping-item"><a class="shopping-link basic-text" href="#">Корзина</a></li>
+        </ul>
+      </div>
 
       <ul class="site-nav">
         <li class="site-nav-item">
@@ -65,22 +78,13 @@
           <a class="site-nav-link" href="#">Контакты</a>
         </li>
       </ul>
-      <ul class="user-nav">
-        <li class="login-item">
-          <a class="login-link basic-text" href="#">Войти</a>
-        </li>
-      </ul>
-      <ul class="shopping basic-text">
-        <li class="shopping-item"><a class="shopping-link basic-text" href="#">Сравнить</a></li>
-        <li class="shopping-item"><a class="shopping-link basic-text" href="#">Корзина</a></li>
-      </ul>
     </nav>
   </header>
 
-  <main class="container">
+  <main>
     <h1 class="visually-hidden">Магазин электроники «Девайс»</h1>
 
-    <section class="slider">
+    <section class="slider container">
       <h2 class="visually-hidden">Промо-слайдер</h2>
 
       <div>
@@ -123,7 +127,7 @@
           <p class="slider-heading">Худеем правильно!</p>
           <p class="basic-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 
-          <a class="button" href="#">Подробнее</a>
+          <a class="button btn-more" href="#">Подробнее</a>
 
           <table class="slider-table">
             <tr>
@@ -143,7 +147,7 @@
           <p class="slider-heading">Порхает как бабочка, жалит как пчела!</p>
           <p class="basic-text">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 
-          <a class="button" href="#">Подробнее</a>
+          <a class="button btn-more" href="#">Подробнее</a>
 
           <table class="slider-table">
             <tr>
@@ -160,7 +164,7 @@
 
     </section>
 
-    <div class="catalog">
+    <div class="catalog container">
       <ul class="catalog-list">
         <li><a href="#">Виртуальная реальность</a></li>
         <li><a href="#">Моноподы для селфи</a></li>
@@ -176,7 +180,7 @@
 
       <div>
         <ul class="services-list">
-          <li><button type="button" class="services-button" autofocus="here">Доставка</button></li>
+          <li><button type="button" class="services-button services-button-active">Доставка</button></li>
           <li><button type="button" class="services-button">Гарантия</button></li>
           <li><button type="button" class="services-button">Кредит</button></li>
         </ul>
@@ -199,7 +203,7 @@
 
     </section>
 
-    <section class="brands">
+    <section class="brands container">
       <h2 class="visually-hidden">Наши бренды</h2>
       <ul class="brands-list">
         <li><a href="#"><img src="img/logo-1.jpg" width="260" height="100" alt="DJI"></a></li>
@@ -219,17 +223,17 @@
         <li>Автотрейдинг</li>
         <li>ЖелДорЭкспедиция</li>
       </ul>
-      <a class="button" href="#">Подробнее о нас</a>
+      <a class="button btn-we" href="#">Подробнее о нас</a>
     </section>
 
-    <section class="about-us">
+    <section class="contacts">
       <h2>Контакты</h2>
       <p class="basic-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
       <p class="map">
         <a href="map.html"><img src="img/map.jpg" alt="Карта офиса по адресу улица Строителей, 15"></a>
       </p>
 
-      <a class="button" href="#">Напишите нам</a>
+      <a class="button btn-we" href="#">Напишите нам</a>
 
     </section>
   </main>
@@ -280,26 +284,29 @@
 
   </footer>
 
-  <section class="modal contact-us">
-    <h2 class="visually-hidden">Форма обратной связи</h2>
+    <section class="contact-us modal">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
 
-    <form action="http://echo.htmlacademy.ru" method="post">
+      <form class="contact-us-form" action="http://echo.htmlacademy.ru" method="post">
 
-      <div class="modal-half-width">
-        <label class="modal-label" for="modal-name">Ваше имя:</label>
-        <input type="text" name="name" id="modal-name" placeholder="Имя Фамилия" required>
-      </div>
-      <div class="modal-half-width">
-        <label class="modal-label" for="modal-email">Ваш e-mail:</label>
-        <input type="email" name="e-mail" id="modal-email" placeholder="email@example.com" required>
-      </div>
-      <label class="modal-label" for="letter">Текст письма</label>
-      <textarea id="letter" rows=5 name="comment" placeholder="В свободной форме" required></textarea>
-      <button type="submit" value="Отправить">
+        <div class="modal-half-width">
+          <label class="modal-label" for="modal-name">Ваше имя:</label>
+          <input type="text" name="name" id="modal-name" placeholder="Имя Фамилия" required>
+        </div>
+        <div class="modal-half-width">
+          <label class="modal-label" for="modal-email">Ваш e-mail:</label>
+          <input type="email" name="e-mail" id="modal-email" placeholder="email@example.com" required>
+        </div>
+        <div class="modal-full-width">
+        <label class="modal-label" for="letter">Текст письма:</label>
+        <textarea id="letter" rows=5 name="comment" placeholder="В свободной форме" required></textarea>
+        </div>
+        <button type="submit" class="button form-button">Отправить</button>  
         <button type="button" class="modal-close" aria-label="Закрыть"></button>
-      </section>
+      </form>
+    </section>
 
-      <section class="modal modal-map">
+      <section class="modal-map modal">
         <h2 class="visually-hidden">Как до нас добраться</h2>
         <button type="button" class="modal-close" aria-label="Закрыть"></button>
       </section>

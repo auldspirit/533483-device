@@ -34,7 +34,7 @@
 
       <ul class="site-nav">
         <li class="site-nav-item">
-          <a class="site-nav-link" href="catalog.html">Каталог товаров</a>
+          <a class="site-nav-link dropdown" href="catalog.html">Каталог товаров</a>
           <ul class="dropdown-menu">
             <li>
               <ul class="dropdown-menu-1">
@@ -210,10 +210,10 @@
     <section class="brands container">
       <h2 class="visually-hidden">Наши бренды</h2>
       <ul class="brands-list">
-        <li><a href="#"><img src="img/logo-1.jpg" width="260" height="100" alt="DJI"></a></li>
-        <li><a href="#"><img src="img/logo-2.jpg" width="260" height="100" alt="SP Gadgets"></a></li>
-        <li><a href="#"><img src="img/logo-3.jpg" width="260" height="100" alt="GoPro"></a></li>
-        <li><a href="#"><img src= "img/logo-4.jpg" width="260" height="100" alt="Vive"></a></li>
+        <li><a class="logo-1" href="#"><img src="img/logo-1.jpg" width="260" height="100" alt="DJI"></a></li>
+        <li><a class="logo-2" href="#"><img src="img/logo-2.jpg" width="260" height="100" alt="SP Gadgets"></a></li>
+        <li><a class="logo-3" href="#"><img src="img/logo-3.jpg" width="260" height="100" alt="GoPro"></a></li>
+        <li><a class="logo-4" href="#"><img src= "img/logo-4.jpg" width="260" height="100" alt="Vive"></a></li>
       </ul>
     </section>
 
@@ -244,48 +244,52 @@
   </main>
 
   <footer class="footer-main">
+   <div class="container">
+      <a class="footer-main-logo">
+        <img src="img/logo-footer.png" width="162" height="36" alt="Логотип «Девайс»">
+      </a>
+      
+      <div class="footer-top-nav">
+        <ul class="footer-user-nav">
+          <li class="footer-user-item">
+            <a class="footer-user-login basic-text" href="#">Войти</a>
+          </li>
+        </ul>
 
-    <a class="footer-main-logo">
-      <img src="img/logo-footer.png" width="162" height="36" alt="Логотип «Девайс»">
-    </a>
+        <ul class="footer-shopping">
+          <li class="footer-shopping-item">
+            <a class="footer-shopping-link basic-text" href="#">Сравнить</a>
+          </li>
+          <li class="footer-shopping-item">
+            <a class="footer-shopping-link basic-text" href="#">Корзина</a>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="footer-middle-nav">
+        <p class="footer-contacts basic-text">
+          г. Москва, ул. Строителей, 15
+        </p>
 
-    <p class="footer-contacts basic-text">
-      г. Москва, ул. Строителей, 15
-    </p>
+          <ul class="footer-site-nav">
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Доставка</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Гарантия</a></li>
+            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Контакты</a></li>
+          </ul>
 
-    <div>
-      <ul class="footer-site-nav">
-        <li class="footer-nav-item"><a class="footer-nav-link" href="#">Доставка</a></li>
-        <li class="footer-nav-item"><a class="footer-nav-link" href="#">Гарантия</a></li>
-        <li class="footer-nav-item"><a class="footer-nav-link" href="#">Контакты</a></li>
-      </ul>
+        <a class="basic-text tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
+      </div>  
+      
+      <div class="footer-bottom-nav">
+        <ul class="footer-social">
+          <li><a class="social-button fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+          <li><a class="social-button instagram" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+          <li><a class="social-button twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+        </ul>
+
+         <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy"></a>
+      </div>
     </div>
-
-    <div">
-    <ul class="footer-social">
-      <li><a class="social-button" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-      <li><a class="social-button" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-      <li><a class="social-button" href="#"><span class="visually-hidden">Твиттер</span></a></li>
-    </ul>
-  </div>
-
-  <ul class="footer-user-nav">
-    <li class="footer-user-item">
-      <a class="footer-user-login basic-text" href="#">Войти</a></li>
-    </ul>
-
-    <ul class="footer-shopping">
-      <li class="footer-shopping-item">
-        <a class="footer-shopping-link basic-text" href="#">Сравнить</a>
-      </li>
-      <li class="footer-shopping-item">
-        <a class="footer-shopping-link basic-text" href="#">Корзина</a>
-      </li>
-    </ul>
-
-    <a class="basic-text" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
-
-    <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy"></a>
 
   </footer>
 

@@ -98,51 +98,56 @@
 
     <div class="catalog">
       <div class="filter-bg">
-        <aside class="catalog-filter">
-          <p class="selection-heading">Фильтр</p> 
+        <section class="catalog-filter">
+          <p class="selection-heading">Фильтр:</p> 
 
           <form class="filter" action="http://echo.htmlacademy.ru" method="post">
             <div class="filter-item">
-              <fieldset>
+              <fieldset class="range-fieldset">
                 <legend>Стоимость</legend>
-                <div class="range-filter">
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
+                  <div class="range-filter">
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="toggle toggle-min"></div>
+                      <div class="toggle toggle-max"></div> 
                     </div>
-                    <div class="toggle toggle-min"></div>
-                    <div class="toggle toggle-min"></div> 
-                  </div>
                   <div class="price-controls">
                     <label class="min-price">от <input type="text" name="min-price" value="0"></label> 
-                    <label class="max-price">до <input type="text" name="max-price" value="15000"></label>
+                    <label class="max-price">до <input type="text" name="max-price" value="5000"></label>
                   </div>
                 </fieldset>
               </div>
 
-              <div class="filter-item">
+              <div class="filter-item filter-color">
                 <fieldset>
                   <legend>Цвет</legend>
-                  <label><input type="checkbox" name="color-black" value="Черный" checked>Черный</label>
-                  <label><input type="checkbox" name="color-white" value="Белый">Белый</label>
-                  <label><input type="checkbox" name="color-blue" value="Синий" checked>Синий</label>
-                  <label><input type="checkbox" name="color-red" value="Красный" checked>Красный</label>
-                  <label><input type="checkbox" name="color-pink" value="Розовый">Розовый</label>
+                  
+                  <input type="checkbox" id="black" name="color-black" value="Черный" checked class="visually-hidden"><label for="black" class="color-checkbox">Черный</label>
+
+                  <input type="checkbox" id="white" name="color-white" value="Белый" class="visually-hidden"><label for="white" class="color-checkbox">Белый</label>
+
+                  <input type="checkbox" id="blue" name="color-blue" value="Синий" checked class="visually-hidden"><label for="blue" class="color-checkbox">Синий</label>
+
+                  <input type="checkbox" id="red" name="color-red" value="Красный" checked class="visually-hidden"><label for="red" class="color-checkbox">Красный</label>
+
+                  <input type="checkbox" id="pink" name="color-pink" value="Розовый" class="visually-hidden"><label for="pink" class="color-checkbox">Розовый</label>
                 </fieldset>
               </div>
 
-              <div class="filter-item">
+              <div class="filter-item bluetooth">
                 <fieldset>
                   <legend>Bluetooth</legend>
-                  <label><input type="radio" name="bluetooth" value="Есть" checked>Есть</label>
-                  <label><input type="radio" name="bluetooth" value="Нет">Нет</label>
+                 <input type="radio" id="tooth-on" name="bluetooth" value="Есть" checked class="visually-hidden"><label for="tooth-on" class="bluetooth-radio">Есть</label>
+                  <input type="radio" id="tooth-off" name="bluetooth" value="Нет" class="visually-hidden"><label for="tooth-off" class="bluetooth-radio">Нет</label>
                 </fieldset>
               </div>
 
               <button class="services-button form-button" type="submit">Показать</button>
             </form> 
 
-        </aside>
+        </section>
       </div>
       
       <div class="catalog-bg">
@@ -174,28 +179,32 @@
                 </h3>
                 <p class="catalog-item-price">500 руб.</p>
               </div>
-              <p class="catalog-item-image">
-                <img src="img/item-1.jpg" alt="Любительская селфи-палка">
-              </p>
-              <p class="catalog-item-hover">
-                <a class="button btn-cart" href="#">В корзину</a>
-                <a class="button-compare" href="#">Добавить к сравнению</a>
-              </p>
+              <div class="catalog-item-card">
+                <p class="catalog-item-image">
+                  <img src="img/item-1.jpg" width="360px" height="380px" alt="Любительская селфи-палка">
+                </p>
+                <p class="catalog-item-hover">
+                  <a class="button btn-cart" href="#">В корзину</a>
+                  <a class="button-compare" href="#">Добавить к сравнению</a>
+                </p>
+              </div>
             </li>
 
             <li class="catalog-item">
               <div class="catalog-description">
-                <h3><a href="#" class="catalog-item-title">Профессиональная селфи-палка</a>
+                <h3><a href="#" class="catalog-item-title">Профессиональная селфи&#8209палка</a>
                 </h3>
                 <p class="catalog-item-price">1 500 руб.</p>
               </div>
-              <p class="catalog-item-image">
-                <img src="img/item-2.jpg" alt="Профессиональная селфи-палка">
-              </p>
-              <p class="catalog-item-hover">
-                <a class="button btn-cart" href="#">В корзину</a>
-                <a class="button-compare" href="#">Добавить к сравнению</a>
-              </p>
+              <div class="catalog-item-card">
+                <p class="catalog-item-image">
+                  <img src="img/item-2.jpg" width="360px" height="380px" alt="Профессиональная селфи-палка">
+                </p>
+                <p class="catalog-item-hover">
+                  <a class="button btn-cart" href="#">В корзину</a>
+                  <a class="button-compare" href="#">Добавить к сравнению</a>
+                </p>
+              </div>
             </li>
 
             <li class="catalog-item">
@@ -204,13 +213,15 @@
                 </h3>
                 <p class="catalog-item-price">2 500 руб.</p>
               </div>
-              <p class="catalog-item-image">
-                <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка">
-              </p>
-              <p class="catalog-item-hover">
-                <a class="button btn-cart" href="#">В корзину</a>
-                <a class="button-compare" href="#">Добавить к сравнению</a>
-              </p>
+              <div class="catalog-item-card">
+                <p class="catalog-item-image">
+                  <img src="img/item-3.jpg" width="360px" height="380px" alt="Непотопляемая селфи-палка">
+                </p>
+                <p class="catalog-item-hover">
+                  <a class="button btn-cart" href="#">В корзину</a>
+                  <a class="button-compare" href="#">Добавить к сравнению</a>
+                </p>
+              </div> 
             </li>
 
             <li class="catalog-item">
@@ -219,13 +230,15 @@
                 </h3>
                 <p class="catalog-item-price">4 900 руб.</p>
               </div>
-              <p class="catalog-item-image">
-                <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»">
-              </p>
-              <p class="catalog-item-hover">
-                <a class="button btn-cart" href="#">В корзину</a>
-                <a class="button-compare" href="#">Добавить к сравнению</a>
-              </p>  
+              <div class="catalog-item-card">
+                <p class="catalog-item-image">
+                  <img src="img/item-4.jpg" width="360px" height="380px" alt="Селфи-палка «Следуй за мной»">
+                </p>
+                <p class="catalog-item-hover">
+                  <a class="button btn-cart" href="#">В корзину</a>
+                  <a class="button-compare" href="#">Добавить к сравнению</a>
+                </p>
+              </div> 
             </li>
           </ul>
 

@@ -102,7 +102,7 @@
           </div>
           <div class="slider-info">
             <p class="slider-heading">Делай селфи,<br> как Бен Стиллер!</p>
-            <p class="basic-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь&#160(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <p class="basic-text">Самая длинная палка для селфи доступна в нашем магазине. Восемь&#160;(Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 
             <a class="button btn-more" href="#">Подробнее</a>
 
@@ -171,7 +171,7 @@
     <div class="popular container">
       <ul class="popular-list">
         <li class="popular-item"><a href="#">Виртуальная реальность</a></li>
-        <li class="popular-item"><a href="catalog.html#">Моноподы для&#160селфи</a></li>
+        <li class="popular-item"><a href="catalog.html#">Моноподы для&#160;селфи</a></li>
         <li class="popular-item"><a href="#">Экшн-камеры</a></li>
         <li class="popular-item"><a href="#">Фитнес-браслеты</a></li>
         <li class="popular-item"><a href="#">Умные часы</a></li>
@@ -234,9 +234,9 @@
       <section class="contacts">
         <h2>Контакты</h2>
         <p class="basic-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-        <p class="map"><a href="map.html"><img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15"></a></p>
+        <p class="map"><a class="button-map" href="map.html"><img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15"></a></p>
 
-        <a class="button btn-we" href="#">Напишите нам</a>
+        <a class="button btn-we btn-write" href="#">Напишите нам</a>
 
       </section>
 
@@ -293,32 +293,65 @@
 
   </footer>
 
-    <section class="contact-us modal">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
+  <section class="contact-us modal">
+    <h2 class="visually-hidden">Форма обратной связи</h2>
 
-      <form class="contact-us-form" action="http://echo.htmlacademy.ru" method="post">
+    <form class="contact-us-form" action="http://echo.htmlacademy.ru" method="post">
 
-        <div class="modal-half-width">
-          <label class="modal-label" for="modal-name">Ваше имя:</label>
-          <input type="text" name="name" id="modal-name" placeholder="Имя Фамилия" required>
-        </div>
-        <div class="modal-half-width">
-          <label class="modal-label" for="modal-email">Ваш e-mail:</label>
-          <input type="email" name="e-mail" id="modal-email" placeholder="email@example.com" required>
-        </div>
-        <div class="modal-full-width">
-        <label class="modal-label" for="letter">Текст письма:</label>
-        <textarea id="letter" rows=5 name="comment" placeholder="В свободной форме" required></textarea>
-        </div>
-        <button type="submit" class="button form-button">Отправить</button>  
-        <button type="button" class="modal-close" aria-label="Закрыть"></button>
-      </form>
+      <div class="modal-half-width">
+        <label class="modal-label" for="modal-name">Ваше имя:</label>
+        <input type="text" name="name" id="modal-name" placeholder="Имя Фамилия" required>
+      </div>
+      <div class="modal-half-width">
+        <label class="modal-label" for="modal-email">Ваш e-mail:</label>
+        <input type="email" name="e-mail" id="modal-email" placeholder="email@example.com" required>
+      </div>
+      <div class="modal-full-width">
+      <label class="modal-label" for="letter">Текст письма:</label>
+      <textarea id="letter" rows=5 name="comment" placeholder="В свободной форме" required></textarea>
+      </div>
+      <button type="submit" class="button form-button">Отправить</button>  
+      <button type="button" class="modal-close" aria-label="Закрыть"></button>
+    </form>
+  </section>
+
+    <section class="modal-map modal">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <iframe src="https://yandex.ru/map-widget/v1/-/CBe~eNGekD" width="960" height="559" frameborder="0"></iframe>
+      <button type="button" class="modal-close" aria-label="Закрыть"></button>
     </section>
 
-      <section class="modal-map modal">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <button type="button" class="modal-close" aria-label="Закрыть"></button>
-      </section>
+  <script>
+    var form = document.querySelector(".btn-write");
+    var popup = document.querySelector(".contact-us");
+    var close = popup.querySelector(".modal-close");
+  
+    form.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.add("modal-show");
+    });
+    
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal-show");
+    });
+
+    var mapLink = document.querySelector(".button-map");
+    var mapPopup = document.querySelector(".modal-map");
+    var mapClose = mapPopup.querySelector(".modal-close");
+
+      mapLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.add("modal-show");
+  });
+
+    mapClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    mapPopup.classList.remove("modal-show");
+  });
+
+  </script>
+
     </body>
     </html>
 

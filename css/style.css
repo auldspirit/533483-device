@@ -1434,7 +1434,6 @@ a.button-compare:active {
   top: 50%;
   transform: translateY(-50%);
   left: -34px;
-  margin-bottom: 
 }
 
 .footer-main {
@@ -1643,8 +1642,15 @@ a.button-compare:active {
   background-color: #ffffff;
   box-shadow: 0px 10px 20px 0px rgba(4, 6, 6, 0.2);
   z-index: 1;
-
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: none;
+  z-index: 10;
+}
+
+.modal-show {
+  display: block;
 }
 
 .contact-us {
@@ -1652,7 +1658,7 @@ a.button-compare:active {
   height: 553px;
   padding: 95px 100px;
   box-sizing: border-box;
-  position: relative;
+  position: fixed;
 }
 
 .contact-us-form {
@@ -1720,7 +1726,7 @@ a.button-compare:active {
   background-image: url("../img/map-big.jpg");
   width: 960px;
   height: 559px;
-  position: relative;
+  position: fixed;
 }
 
 .modal-close {

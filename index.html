@@ -188,7 +188,7 @@
           <li><button type="button" class="services-button">Гарантия</button></li>
           <li><button type="button" class="services-button">Кредит</button></li>
         </ul>
-      
+
         <ul class="services-content">
           <li class="services-item services-item-current">
             <h3>Доставка</h3>
@@ -219,12 +219,12 @@
 
     <div class="about container">
       <section class="about-us">
-        
+
         <h2>О нас</h2>
         <p class="basic-text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
         <p class="basic-text">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
         <ul class="about-us-list">
-          <li>Деловые линии</li>
+          <li>Деловые Линии</li>
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
@@ -244,11 +244,11 @@
   </main>
 
   <footer class="footer-main">
-   <div class="container">
+    <div class="container">
       <a class="footer-main-logo">
         <img src="img/logo-footer.png" width="162" height="36" alt="Логотип «Девайс»">
       </a>
-      
+
       <div class="footer-top-nav">
         <ul class="footer-user-nav">
           <li class="footer-user-item">
@@ -265,21 +265,21 @@
           </li>
         </ul>
       </div>
-      
+
       <div class="footer-middle-nav">
         <p class="footer-contacts basic-text">
           г. Москва, ул. Строителей, 15
         </p>
 
-          <ul class="footer-site-nav">
-            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Доставка</a></li>
-            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Гарантия</a></li>
-            <li class="footer-nav-item"><a class="footer-nav-link" href="#">Контакты</a></li>
-          </ul>
+        <ul class="footer-site-nav">
+          <li class="footer-nav-item"><a class="footer-nav-link" href="#">Доставка</a></li>
+          <li class="footer-nav-item"><a class="footer-nav-link" href="#">Гарантия</a></li>
+          <li class="footer-nav-item"><a class="footer-nav-link" href="#">Контакты</a></li>
+        </ul>
 
         <a class="basic-text tel" href="tel:+74954959595">Тел.: +7 (495) 495-95-95</a>
       </div>  
-      
+
       <div class="footer-bottom-nav">
         <ul class="footer-social">
           <li><a class="social-button fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
@@ -287,7 +287,7 @@
           <li><a class="social-button twitter" href="#"><span class="visually-hidden">Твиттер</span></a></li>
         </ul>
 
-         <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy"></a>
+        <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" width="27" height="35" alt="Логотип HTML Academy"></a>
       </div>
     </div>
 
@@ -300,58 +300,29 @@
 
       <div class="modal-half-width">
         <label class="modal-label" for="modal-name">Ваше имя:</label>
-        <input type="text" name="name" id="modal-name" placeholder="Имя Фамилия" required>
+        <input type="text" name="yourname" id="modal-name" placeholder="Имя Фамилия">
       </div>
       <div class="modal-half-width">
         <label class="modal-label" for="modal-email">Ваш e-mail:</label>
-        <input type="email" name="e-mail" id="modal-email" placeholder="email@example.com" required>
+        <input type="email" name="email" id="modal-email" placeholder="email@example.com">
       </div>
       <div class="modal-full-width">
-      <label class="modal-label" for="letter">Текст письма:</label>
-      <textarea id="letter" rows=5 name="comment" placeholder="В свободной форме" required></textarea>
+        <label class="modal-label" for="letter">Текст письма:</label>
+        <textarea id="letter" rows=5 name="comment" placeholder="В свободной форме"></textarea>
       </div>
       <button type="submit" class="button form-button">Отправить</button>  
       <button type="button" class="modal-close" aria-label="Закрыть"></button>
     </form>
   </section>
 
-    <section class="modal-map modal">
-      <h2 class="visually-hidden">Как до нас добраться</h2>
-      <iframe src="https://yandex.ru/map-widget/v1/-/CBe~eNGekD" width="960" height="559" frameborder="0"></iframe>
-      <button type="button" class="modal-close" aria-label="Закрыть"></button>
-    </section>
+  <section class="modal-map modal">
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe src="https://yandex.ru/map-widget/v1/-/CBe~eNGekD" width="960" height="559"></iframe>
+    <button type="button" class="modal-close" aria-label="Закрыть"></button>
+  </section>
 
-  <script>
-    var form = document.querySelector(".btn-write");
-    var popup = document.querySelector(".contact-us");
-    var close = popup.querySelector(".modal-close");
-  
-    form.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.add("modal-show");
-    });
-    
-    close.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popup.classList.remove("modal-show");
-    });
+  <script src="js/script.js"></script>
 
-    var mapLink = document.querySelector(".button-map");
-    var mapPopup = document.querySelector(".modal-map");
-    var mapClose = mapPopup.querySelector(".modal-close");
-
-      mapLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    mapPopup.classList.add("modal-show");
-  });
-
-    mapClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    mapPopup.classList.remove("modal-show");
-  });
-
-  </script>
-
-    </body>
-    </html>
+</body>
+</html>
 

@@ -96,80 +96,86 @@
       </ul>
     </div>
 
+    <div class="gradient-top">
+      <div class="container">
+        <p class="selection-heading">Фильтр:</p> 
+
+        <div class="sort-by">
+          <p class="selection-heading">Сортировка:</p>
+          <ul class="sort-by-type">
+            <li><a class="sort-by-link sort-by-link-active">По цене</a></li>
+            <li><a class="sort-by-link" href="#">По типу</a></li>
+            <li><a class="sort-by-link" href="#">По популярности</a></li>    
+          </ul>
+          <ul class="sort-by-dir">
+            <li>
+              <a class="sort-by-dir-up" href="#"><span class="visually-hidden">По возрастанию</span></a>
+            </li>
+            <li>
+              <a class="sort-by-dir-down sort-by-dir-active"><span class="visually-hidden">По убыванию</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div class="catalog">
       <div class="filter-bg">
         <section class="catalog-filter">
-          <p class="selection-heading">Фильтр:</p> 
+
 
           <form class="filter" action="http://echo.htmlacademy.ru" method="post">
             <div class="filter-item">
               <fieldset class="range-fieldset">
                 <legend>Стоимость</legend>
-                  <div class="range-filter">
-                    <div class="range-controls">
-                      <div class="scale">
-                        <div class="bar"></div>
-                      </div>
-                      <div class="toggle toggle-min"></div>
-                      <div class="toggle toggle-max"></div> 
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
                     </div>
-                    <div class="price-controls">
-                      <label class="min-price">от <input type="text" name="min-price" value="0"></label> 
-                      <label class="max-price">до <input type="text" name="max-price" value="5000"></label>
-                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div> 
                   </div>
-                </fieldset>
-              </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input type="text" name="min-price" value="0"></label> 
+                    <label class="max-price">до <input type="text" name="max-price" value="5000"></label>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
 
-              <div class="filter-item filter-color">
-                <fieldset>
-                  <legend>Цвет</legend>
-                  
-                  <input type="checkbox" id="black" name="color-black" value="Черный" checked class="visually-hidden"><label for="black" class="color-checkbox">Черный</label>
+            <div class="filter-item filter-color">
+              <fieldset>
+                <legend>Цвет</legend>
 
-                  <input type="checkbox" id="white" name="color-white" value="Белый" class="visually-hidden"><label for="white" class="color-checkbox">Белый</label>
+                <input type="checkbox" id="black" name="color-black" value="Черный" checked class="visually-hidden"><label for="black" class="color-checkbox">Черный</label>
 
-                  <input type="checkbox" id="blue" name="color-blue" value="Синий" checked class="visually-hidden"><label for="blue" class="color-checkbox">Синий</label>
+                <input type="checkbox" id="white" name="color-white" value="Белый" class="visually-hidden"><label for="white" class="color-checkbox">Белый</label>
 
-                  <input type="checkbox" id="red" name="color-red" value="Красный" checked class="visually-hidden"><label for="red" class="color-checkbox">Красный</label>
+                <input type="checkbox" id="blue" name="color-blue" value="Синий" checked class="visually-hidden"><label for="blue" class="color-checkbox">Синий</label>
 
-                  <input type="checkbox" id="pink" name="color-pink" value="Розовый" class="visually-hidden"><label for="pink" class="color-checkbox">Розовый</label>
-                </fieldset>
-              </div>
+                <input type="checkbox" id="red" name="color-red" value="Красный" checked class="visually-hidden"><label for="red" class="color-checkbox">Красный</label>
 
-              <div class="filter-item bluetooth">
-                <fieldset>
-                  <legend>Bluetooth</legend>
-                 <input type="radio" id="tooth-on" name="bluetooth" value="Есть" checked class="visually-hidden"><label for="tooth-on" class="bluetooth-radio">Есть</label>
-                  <input type="radio" id="tooth-off" name="bluetooth" value="Нет" class="visually-hidden"><label for="tooth-off" class="bluetooth-radio">Нет</label>
-                </fieldset>
-              </div>
+                <input type="checkbox" id="pink" name="color-pink" value="Розовый" class="visually-hidden"><label for="pink" class="color-checkbox">Розовый</label>
+              </fieldset>
+            </div>
 
-              <button class="services-button form-button" type="submit">Показать</button>
-            </form> 
+            <div class="filter-item bluetooth">
+              <fieldset>
+                <legend>Bluetooth</legend>
+                <input type="radio" id="tooth-on" name="bluetooth" value="Есть" checked class="visually-hidden"><label for="tooth-on" class="bluetooth-radio">Есть</label>
+                <input type="radio" id="tooth-off" name="bluetooth" value="Нет" class="visually-hidden"><label for="tooth-off" class="bluetooth-radio">Нет</label>
+              </fieldset>
+            </div>
+
+            <button class="services-button form-button" type="submit">Показать</button>
+          </form> 
 
         </section>
       </div>
-      
+
       <div class="catalog-bg">
         <section class="catalog-main">
-          <div class="sort-by">
-            <p class="selection-heading">Сортировка:</p>
-            <ul class="sort-by-type">
-              <li><a class="sort-by-link sort-by-link-active">По цене</a></li>
-              <li><a class="sort-by-link" href="#">По типу</a></li>
-              <li><a class="sort-by-link" href="#">По популярности</a></li>    
-            </ul>
-            <ul class="sort-by-dir">
-              <li>
-                <a class="sort-by-dir-up" href="#"><span class="visually-hidden">По возрастанию</span></a>
-              </li>
-              <li>
-                <a class="sort-by-dir-down sort-by-dir-active"><span class="visually-hidden">По убыванию</span></a>
-              </li>
-            </ul>
-          </div>
-
 
           <h2 class="visually-hidden">Список товаров</h2>
 

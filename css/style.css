@@ -227,6 +227,8 @@ a[href].button:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
 }
@@ -557,6 +559,7 @@ a[href].button:active {
 
 .slider-list {
   width: 100%;
+  margin-bottom: 101px;
 }
 
 .slider-item,
@@ -570,7 +573,6 @@ a[href].button:active {
   position: relative;
   z-index: 1;
   margin-top: -112px;
-  margin-bottom: 296px;
 }
 
 
@@ -622,9 +624,10 @@ a[href].button:active {
 
 .slider-info {
   margin-top: 80px;
-  width: 50%}
+  width: 50%;
+}
 
-.slider-heading + .basic-text {
+.slider-heading ~ .basic-text:last-of-type {
   margin-bottom: 42px;
   padding-right: 30px;
 }
@@ -632,6 +635,7 @@ a[href].button:active {
 .slider-info p {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .slider-info .slider-heading {
@@ -645,7 +649,7 @@ a[href].button:active {
   border-collapse: collapse;
 }
 
-.slider-table th {
+.slider-table td {
   font-family: "Gilroy Light", Arial, sans-serif;
   font-size: 36px;
   line-height: 48px;
@@ -655,16 +659,17 @@ a[href].button:active {
   text-align: left;
 }
 
-.slider-table th:nth-child(2) {
+.slider-table td:nth-child(2) {
   width: 138px;
 }
 
-.slider-table td {
+.slider-table th {
   font-family: "Open Sans Light", Arial, sans-serif;
   font-size: 13px;
   line-height: 20px;
   font-weight: normal;
   padding: 0;
+  text-align: left;
 }
 
 .slider-buttons {
@@ -676,7 +681,7 @@ a[href].button:active {
           order: 2;
   position: absolute;
   right: 83px;
-  bottom: 442px;
+  bottom: 247px;
   z-index: 2;
 }
 
@@ -708,6 +713,8 @@ a[href].button:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .breadcrumbs li {
@@ -1293,6 +1300,8 @@ a.button-compare:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
   padding: 0;
   margin-left: 6px; 
@@ -1336,25 +1345,38 @@ a.button-compare:active {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 180px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 138px;
   position: relative;  
 }
 
-.popular-list a { 
+.popular-item a { 
   text-transform: none;
   letter-spacing: .01em;
   display: block;
   width: 160px;
-  position: relative;
+  padding-top: 195px;
+  margin-bottom: 45px;
+  background: -webkit-linear-gradient(top, 
+  rgba(240, 197, 46, 0.5) 0px, 
+  rgba(240, 197, 46, 0.5) 160px, 
+  rgba(255, 255, 255, 0) 160px, 
+  rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(top, 
+  rgba(240, 197, 46, 0.5) 0px, 
+  rgba(240, 197, 46, 0.5) 160px, 
+  rgba(255, 255, 255, 0) 160px, 
+  rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, 
+  rgba(240, 197, 46, 0.5) 0px, 
+  rgba(240, 197, 46, 0.5) 160px, 
+  rgba(255, 255, 255, 0) 160px, 
+  rgba(255, 255, 255, 0) 100%)
 }
 
-.popular-item::before {
-  content: "";
-  position: absolute;
-  width: 160px;
-  height: 160px;
-  top: -195px;
-  background-color: rgba(240, 197, 46, 0.5);
+.popular-item {
+  position: relative;
 }
 
 .popular-item a::after {
@@ -1362,7 +1384,7 @@ a.button-compare:active {
   position: absolute;
   width: 160px;
   height: 160px;
-  top: -195px;
+  top: 0;
   left: 0;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -1409,14 +1431,32 @@ a.button-compare:active {
   color: rgba(0, 0, 0, 1);
 }
 
-.popular-item a:active {
+.popular-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.popular-item a:active::after {
   opacity: 0.3;
 }
 
-.popular-list .popular-item:hover::before,
-.popular-list .popular-item:focus::before, 
-.popular-list .popular-item:active::before {
-  background-color: rgba(240, 197, 46, 1);
+.popular-list .popular-item a:hover,
+.popular-list .popular-item a:focus, 
+.popular-list .popular-item a:active {
+  background: -webkit-linear-gradient(top, 
+  rgba(240, 197, 46, 1) 0px, 
+  rgba(240, 197, 46, 1) 160px, 
+  rgba(255, 255, 255, 0) 160px, 
+  rgba(255, 255, 255, 0) 100%);
+  background: -o-linear-gradient(top, 
+  rgba(240, 197, 46, 1) 0px, 
+  rgba(240, 197, 46, 1) 160px, 
+  rgba(255, 255, 255, 0) 160px, 
+  rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to bottom, 
+  rgba(240, 197, 46, 1) 0px, 
+  rgba(240, 197, 46, 1) 160px, 
+  rgba(255, 255, 255, 0) 160px, 
+  rgba(255, 255, 255, 0) 100%);
 }
 
 .services {
@@ -1440,7 +1480,7 @@ a.button-compare:active {
 }
 
 .services-list li {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 }
 
 .services-list::after {
@@ -1450,7 +1490,7 @@ a.button-compare:active {
   height: 100%;
   background-color: black;
   right: -8px;
-  margin-top: -22px;
+  margin-top: -24px;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -1534,6 +1574,8 @@ a.button-compare:active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1720,20 +1762,23 @@ a.button-compare:active {
 .footer-site-nav {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  max-width: 500px;
+  max-width: 50%;
 }
 
 .footer-bottom-nav {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+}
+
+.footer-social {
+  max-width: 50%;
+  margin-left: auto;
 }
 
 .academy-logo {
-  margin-left: 481px;
+  margin-left: auto;
+  max-width: 10%;
 }
 
 .social-button {
